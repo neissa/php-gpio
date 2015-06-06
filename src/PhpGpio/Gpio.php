@@ -104,7 +104,7 @@ class Gpio implements GpioInterface
         }
 
         // Add to exported pins array
-        $this->exportedPins[] = $pinNo;
+        $this->exportedPins[$pinNo] = $pinNo;
 
         return $this;
     }
